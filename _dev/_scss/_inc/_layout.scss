@@ -1,0 +1,95 @@
+.main {
+	padding: 45px 0;
+}
+
+.main__header {
+	h1 {
+		color: $purple;
+		margin-bottom: 20px;
+	}
+
+	&__lead {
+		font-size: 18px;
+		text-align: justify;
+	}
+}
+
+// About
+.members {
+	@media (min-width: 992px) {
+		@include display(flex);
+		margin: 0 -15px;
+	}
+}
+
+.member {
+	background: #fff;
+	margin-top: 75px;
+	padding: 30px;
+	@include display(flex);
+	@include flex-direction(column);
+
+	@media (min-width: 992px) {
+		width: 33.33%;
+		margin-left: 15px;
+		margin-right: 15px;
+
+		&:first-child{
+			@include order(1);
+		}
+		&:nth-child(2){
+			@include order(0);
+		}
+		&:nth-child(3){
+			@include order(2);
+		}
+	}
+
+	&__head {
+		text-align: center;
+		padding-bottom: 20px;
+
+		img {
+			border-radius: 50%;
+			margin-bottom: 30px;
+			margin-top: -90px;
+		}
+
+		h3 {
+			font-family: $font-bold;
+			color: $purple;
+			font-size: 21px;
+			margin-bottom: 5px;
+		}
+
+		h4 {
+			color: $color-lighter;
+			font-size: 12px;
+			font-weight: 400;
+		}
+	}
+
+	&__content {
+		@include flex(1 0 auto);
+	}
+
+
+}
+
+.member__link {
+	text-align: center;
+
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+	li {
+		display: inline-block;
+	}
+}
+
+// Terms
+.paragraph__title {
+	display: block;
+}

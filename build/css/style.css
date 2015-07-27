@@ -1535,7 +1535,7 @@ strong {
 .header__nav {
   font-family: "san_francisco_textbold", sans-serif;
   float: right;
-  margin-top: 15px; }
+  margin-top: 18px; }
   .header__nav a {
     color: #fff; }
     .header__nav a:hover {
@@ -1592,6 +1592,7 @@ strong {
   background: #fff;
   margin-top: 75px;
   padding: 30px;
+  border-radius: 5px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -1644,7 +1645,8 @@ strong {
     .member__head img {
       border-radius: 50%;
       margin-bottom: 30px;
-      margin-top: -90px; }
+      margin-top: -90px;
+      width: 120px; }
     .member__head h3 {
       font-family: "san_francisco_textbold", sans-serif;
       color: #a74581;
@@ -1671,6 +1673,24 @@ strong {
     margin-bottom: 0; }
   .member__link li {
     display: inline-block; }
+
+.icon__social {
+  background: url(../img/about-social.svg) no-repeat;
+  width: 36px;
+  height: 36px;
+  margin: 0 3px;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  opacity: .8; }
+  .icon__social--tw {
+    background-position: -36px 0; }
+  .icon__social--web {
+    background-position: -72px 0; }
+  .icon__social--db {
+    background-position: -108px 0; }
+  .icon__social:hover {
+    opacity: 1; }
 
 .paragraph__title {
   display: block; }

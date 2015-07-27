@@ -1,0 +1,3 @@
+@mixin link-hover(){
+	@include transition(all .1s linear);
+}

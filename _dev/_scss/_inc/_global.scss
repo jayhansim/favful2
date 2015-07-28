@@ -26,6 +26,10 @@
 
 // Global
 
+html, body {
+  min-height: 100%;
+}
+
 body {
 	font: 16px/1.5 $font;
 	text-rendering: optimizedLegibility;
@@ -36,6 +40,11 @@ body {
 
 a {
 	@include link-hover;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 

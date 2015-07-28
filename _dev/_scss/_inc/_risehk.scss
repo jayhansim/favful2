@@ -5,9 +5,19 @@
 	color: #fff;
 	font-family: $font-bold;
 	font-size: 14px;
+
+	@media (max-width: $screen-xs-max) {
+		text-align: center;
+	}
 }
 
 .rise-hk {
 	width: 80px;
 	margin-right: 15px;
+
+	@media (max-width: $screen-xs-max) {
+		margin: 0 auto 10px;
+		display: block;
+
+	}
 }

@@ -1,0 +1,50 @@
+.footer {
+	background: $color;
+	color: lighten($color-lighter,15);
+	padding: 20px 0;
+	font-size: 14px;
+	text-align: center;
+
+	a {
+		color: #F6C7E4;
+		font-family: $font-bold;
+
+		&:hover {
+			opacity: .7;
+			text-decoration: none;
+		}
+	}
+}
+
+.footer__link {
+	@media (min-width: $screen-sm) {
+		text-align: left;
+	}
+
+	a {
+		display: inline-block;
+		margin-right: 20px;
+
+		@media (max-width: $screen-xs-max) {
+			margin: 0 10px;
+		}
+	}
+}
+
+.footer__copyright {
+	@media (min-width: $screen-sm) {
+		text-align: right;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		margin-top: 20px;
+	}
+
+	svg {
+		margin: 0 2px;
+	}
+
+	g {
+		fill: $purple;
+	}
+}

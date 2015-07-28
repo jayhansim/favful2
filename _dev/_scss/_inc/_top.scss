@@ -1,14 +1,26 @@
 .header {
 	background: $purple;
 	color: #fff;
-	padding: 20px 0;
 	@include clearfix;
+
+	@media (max-width: $screen-xs-max) {
+		text-align: center;
+	}
+
+	.container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 }
 
 .header__nav {
 	font-family: $font-bold;
 	float: right;
 	margin-top: 18px;
+
+	@media (max-width: $screen-xs-max) {
+		float: none;
+	}
 
 	a {
 		color: #fff;
@@ -29,6 +41,10 @@
 	li {
 		display: inline-block;
 		padding-left: 30px;
+
+		@media (max-width: $screen-xs-max) {
+			padding: 0 10px;
+		}
 	}
 
 	.icon {

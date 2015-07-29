@@ -18,7 +18,7 @@
 
 .home {
 	background: $purple url(../img/bg.jpg) center top no-repeat;
-	background-size: cover 100%;
+	background-size: cover;
 
 	.header {
 		background-color: transparent;
@@ -285,4 +285,65 @@
 // Terms
 .paragraph__title {
 	display: block;
+}
+
+// bottom CTA
+.bottom-cta {
+	color: #fff;
+	background: $purple url(../img/bg.jpg) no-repeat;
+	padding: 60px 0 30px;
+	margin-top: 90px;
+
+	@media (max-width: $screen-md-max) {
+		padding-bottom: 60px;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		text-align: center;
+	}
+}
+
+.cta__content {
+	// position: relative;
+	// top: 50%;
+	// @include transform(translateY(-50%));
+	//padding-top: 20px;
+
+	.home__tagline {
+		margin-top: 0;
+	}
+
+	.btn {
+		margin-top: 20px;
+	}
+}
+
+.cta__phone {
+	margin-top: -100px;
+
+	@media (max-width: $screen-sm-max) {
+
+		img {
+			max-width: 500px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.btn {
+	&--outline {
+		border: 2px solid #fff;
+		border-radius: $radius;
+		padding: 10px 20px;
+		background: transparent;
+		color: #fff;
+		text-transform: uppercase;
+		font-family: $font-bold;
+		@include link-hover;
+
+		&:hover, &:active, &:focus {
+			background: #fff;
+			color: $purple;
+		}
+	}
 }

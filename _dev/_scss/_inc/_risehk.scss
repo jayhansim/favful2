@@ -5,6 +5,8 @@
 	color: #fff;
 	font-family: $font-bold;
 	font-size: 14px;
+	@include transform(translateY(-100%));
+	@include animation(rise-in .3s ease-in-out 1s forwards);
 
 	@media (max-width: $screen-xs-max) {
 		text-align: center;
@@ -20,4 +22,9 @@
 		display: block;
 
 	}
+}
+
+@include keyframes(rise-in) {
+	from {@include transform(translateY(-100%))}
+	to {@include transform(translateY(0));}
 }

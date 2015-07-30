@@ -3,7 +3,6 @@
 	background: $color url(../img/rise-bg.jpg) center no-repeat;
 	background-size: cover;
 	color: #fff;
-	font-family: $font-bold;
 	font-size: 14px;
 	@include transform(translateY(-100%));
 	@include animation(rise-in .3s ease-in-out 1s forwards);

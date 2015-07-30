@@ -1785,7 +1785,6 @@ strong {
   background: #3b2742 url(../img/rise-bg.jpg) center no-repeat;
   background-size: cover;
   color: #fff;
-  font-family: "san_francisco_textbold", sans-serif;
   font-size: 14px;
   -webkit-transform: translateY(-100%);
   -moz-transform: translateY(-100%);
@@ -1998,7 +1997,7 @@ strong {
   border: none;
   border-radius: 5px;
   background: #ecebe9;
-  padding: 12px 15px;
+  padding: 14px 20px;
   width: 100%; }
   .inputs:active, .inputs:focus {
     background-color: #fff;
@@ -2009,10 +2008,10 @@ strong {
       text-align: center; } }
 
 .kol-form-button {
-  border: 2px solid #fff;
+  border: 2px solid #59C3C2;
   border-radius: 5px;
-  padding: 10px 20px;
-  background: transparent;
+  padding: 12px 24px;
+  background: #59C3C2;
   margin-left: 5px;
   color: #fff;
   text-transform: uppercase;
@@ -2021,8 +2020,8 @@ strong {
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear; }
   .kol-form-button:hover, .kol-form-button:active, .kol-form-button:focus {
-    background: #fff;
-    color: #a74581; }
+    background: #3eabaa;
+    border-color: #3eabaa; }
   @media (max-width: 991px) {
     .kol-form-button {
       width: 100%;

@@ -45,12 +45,30 @@
 		@media (max-width: $screen-xs-max) {
 			padding: 0 10px;
 		}
+
+		@media (max-width: 479px) {
+			&:first-child {
+				display: block;
+				margin-bottom: 20px;
+			}
+		}
 	}
 
 	.icon {
 		width: 24px;
 		height: 24px;
 		vertical-align: middle;
+	}
+}
+
+.nav__video {
+	border: 1px solid rgba(#fff,.2);
+	border-radius: 20px;
+	padding: 7px 20px;
+	display: inline-block;
+
+	svg {
+		margin-right: 8px;
 	}
 }
 

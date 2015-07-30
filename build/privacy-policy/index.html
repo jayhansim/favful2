@@ -8,6 +8,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="/css/style.css">
 
+
 		<meta property="og:site_name" content="Favful">
 		<meta property="og:type" content="website">
 		<meta property="og:title" content="Join Favful">
@@ -36,6 +37,11 @@
 				<a href="/"><img src="/img/favful-logo.svg" alt="Favful" class="favful-logo"></a>
 				<nav role="navigation" class="header__nav">
 					<ul>
+						<li>
+							<a id="favful-video" class="nav__video" href="https://www.youtube.com/watch?v=PxxUVvbhWcE">
+								<svg width="8" height="10" viewBox="0 0 8 10" xmlns="http://www.w3.org/2000/svg"><title>Triangle 4</title><path d="M8.252 5l-8 5V0" fill="#FFF" fill-rule="evenodd"/></svg>Video
+							</a>
+						</li>
 						<li><a href="/about">About Us</a></li>
 						<li><a href="mailto:hello@stayfavful.com">Contact</a></li>
 						<li><a href="https://www.facebook.com/favful" class="icon icon__fb">Facebook</a></li>
@@ -108,6 +114,31 @@
 			</div>
 		</footer>
 
+		<script>window.jQuery || document.write('<scr' + 'ipt src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"><\/sc' + 'ript>')</script>
+		<script>window.$kol_jquery = window.jQuery</script>
+		<script src="https://kickoffpages-kickofflabs.netdna-ssl.com/widgets/1.3.0/kol_embed.js"></script>
+		<script src='https://kickoffpages-kickofflabs.netdna-ssl.com/w/50823/62693.js'></script>
+		<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css">
+		<script src="/js/fancybox/jquery.fancybox.pack.js"></script>
+		<script src="/js/fancybox/helpers/jquery.fancybox-media.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				if($('#favful-video').length) {
+					$('#favful-video').fancybox({
+						openEffect  : 'none',
+						closeEffect : 'none',
+						padding: 0,
+						helpers : {
+							media : {}
+						}
+					});
+				}
+			});
+		</script>
+
+
+		<!-- Google Analytics -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

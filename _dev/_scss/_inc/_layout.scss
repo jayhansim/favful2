@@ -331,19 +331,18 @@
 }
 
 .btn {
-	&--outline {
-		border: 2px solid #fff;
-		border-radius: $radius;
-		padding: 10px 20px;
-		background: transparent;
-		color: #fff;
-		text-transform: uppercase;
-		font-family: $font-bold;
-		@include link-hover;
+	border: 2px solid #59C3C2;
+	border-radius: $radius;
+	padding: 10px 20px;
+	background: #59C3C2;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: $font-bold;
+	@include link-hover;
 
-		&:hover, &:active, &:focus {
-			background: #fff;
-			color: $purple;
-		}
+	&:hover, &:active, &:focus {
+		background: darken(#59C3C2,10);
+		border-color: darken(#59C3C2,10);
+		color: #fff;
 	}
 }

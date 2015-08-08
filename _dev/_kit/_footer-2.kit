@@ -17,10 +17,11 @@
 		<script>window.jQuery || document.write('<scr' + 'ipt src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"><\/sc' + 'ript>')</script>
 		<script>window.$kol_jquery = window.jQuery</script>
 		<script src="https://kickoffpages-kickofflabs.netdna-ssl.com/widgets/1.3.0/kol_embed.js"></script>
-		<script src='https://kickoffpages-kickofflabs.netdna-ssl.com/w/50823/62693.js'></script>
+		<script src='https://kickoffpages-kickofflabs.netdna-ssl.com/w/50823/63842.js'></script>
 		<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css">
 		<script src="/js/fancybox/jquery.fancybox.pack.js"></script>
 		<script src="/js/fancybox/helpers/jquery.fancybox-media.js"></script>
+		<script src="/js/slick.min.js"></script>
 
 		<script>
 			$(document).ready(function(){
@@ -34,6 +35,15 @@
 						}
 					});
 				}
+
+				if($('.phone__screen').length){
+					$('.phone__screen').slick({
+						autoplay: true,
+						autoplaySpeed: 5000
+					});
+				}
+
+
 			});
 		</script>
 

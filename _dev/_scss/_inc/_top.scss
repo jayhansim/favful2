@@ -8,8 +8,8 @@
 	}
 
 	.container {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 }
 
@@ -24,10 +24,11 @@
 
 	a {
 		color: #fff;
+		opacity: .8;
 
 		&:hover {
 			text-decoration: none;
-			opacity: .7;
+			opacity: 1;
 		}
 	}
 
@@ -46,12 +47,12 @@
 			padding: 0 10px;
 		}
 
-		@media (max-width: 479px) {
-			&:first-child {
-				display: block;
-				margin-bottom: 20px;
-			}
-		}
+		// @media (max-width: 479px) {
+		// 	&:first-child {
+		// 		display: block;
+		// 		margin-bottom: 20px;
+		// 	}
+		// }
 	}
 
 	.icon {
@@ -72,6 +73,23 @@
 	}
 }
 
+// Logo
+
+.favful-logo {
+	float: left;
+
+	span {
+		display: block;
+		color: $pink;
+		font-size: 13px;
+		margin-top: -3px;
+	}
+
+	@media (max-width: $screen-xs-max) {
+		float: none;
+	}
+}
+
 
 // Icon
 
@@ -88,4 +106,5 @@
 		background-image: url(../img/icon-twitter.svg);
 	}
 }
+
 

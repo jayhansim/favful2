@@ -1,0 +1,257 @@
+@import "bourbon";
+@import "_inc/var";
+@import "_inc/mixin";
+
+// TOP
+.bg {
+	background: #f8f8f8 url(../img/invite-bg-1.jpg) center bottom no-repeat;
+
+	@media (min-width: 1580px) {
+		background-size: 100% auto;
+	}
+
+	@media (max-width: $screen-md-max) {
+		background-position: right -100px bottom;
+	}
+	@media (max-width: $screen-sm-max) {
+		background-position: right bottom;
+		background-size: 200% auto;
+	}
+
+	@media (max-width: $screen-xs - 1) {
+		background-size: 760px auto;
+		background-position: right -85px top 5px;
+	}
+
+}
+
+
+.invite {
+	background: $purple;
+
+	.header {
+		background: transparent;
+
+		.container {
+			border-bottom: none;
+		}
+	}
+}
+
+.favful-logo {
+	span {
+		color: $color-lighter;
+		font-size: 12px;
+	}
+}
+
+.header__nav {
+	a {
+		color: $purple;
+		opacity: 1;
+
+		&:hover {
+			opacity: .8;
+		}
+	}
+
+	@media (max-width: $screen-xs-max) {
+		display: none;
+
+	}
+}
+
+.nav__video {
+	border-color: rgba($color-lighter,.2);
+
+	path {
+		fill: $purple;
+	}
+}
+
+.icon__fb, .icon__tw {
+	background: none;
+	text-align: center;
+
+	path {
+		fill: $purple;
+	}
+}
+
+.icon__tw {
+	margin-top: 2px;
+}
+
+//phone
+.phone {
+	width: 280px;
+	height: 579px;
+	background: url(../img/iphone-gold@1.5.png) no-repeat;
+	background-size: 280px 579px;
+	margin-bottom: -50px;
+	position: relative;
+	z-index: 1;
+
+	&__screen {
+		width: 241px;
+		height: 428px;
+		position: relative;
+		top: 70px;
+		left: 19px;
+		overflow: hidden;
+	}
+}
+
+//grid {
+.main .row {margin: 0}
+.invite__box, .phone {
+	float: left;
+
+	@media (max-width: $screen-sm-max) {
+		float: none;
+	}
+}
+
+.phone {
+	@media (min-width: $screen-md) {
+		position: relative;
+		@include calc(right, '80% - 280px');
+	}
+
+	@media (max-width: $screen-xs  - 1) {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.invite__box {
+	text-align: center;
+	color: $color-softer;
+
+	@media (min-width: $screen-md) {
+		@include calc(width, '80% - 280px');
+		position: relative;
+		left: 280px;
+		margin-top: 50px;
+		padding-left: 40px;
+		text-align: left;
+	}
+}
+
+// MAIN
+.invite {
+	.main {
+		padding: 15px 0 0;
+	}
+
+	h1 {
+		color: $color-softer;
+
+		@media (min-width: $screen-sm) {
+			font-size: 40px;
+		}
+
+		@media (min-width: $screen-lg){
+			font-size: 48px;
+		}
+
+		@media (max-width: $screen-xs-max) {
+			font-size: 30px;
+		}
+
+		span {
+			color: $purple;
+			display: block;
+
+		}
+	}
+}
+
+.home {
+	&__description {
+		color: $color-lighter;
+	}
+
+	&__tagline, &__description {
+		@media (max-width: $screen-xs - 1) {
+			text-shadow: 0 0 1px #fff, 0 1px 1px #fff, 1px 0 1px #fff, 0 -1px 1px #fff, -1px 0 1px #fff;
+		}
+	}
+}
+
+.kol_signup_form {
+	padding: 20px 43px 30px 43px;
+	background: #fff;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
+	margin-left: -43px;
+
+	@media (max-width: $screen-sm-max) {
+		margin-left: 0;
+		padding: 30px 0;
+	}
+
+	@media (max-width: $screen-xs-max - 1) {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+
+.kol-form-label {
+	color: $color-softer;
+	font-size: 14px;
+	@media (min-width: $screen-md) {
+		width: 120%;
+	}
+}
+
+.kol-form-group {
+	@media (min-width: $screen-md) {
+		width: 66%;
+	}
+}
+
+.kol-form-button-group {
+	@media (min-width: $screen-md) {
+		width: 33%;
+	}
+}
+
+.kol-form-button {
+	text-transform: uppercase;
+	font-size: 17px;
+}
+
+.inputs {
+	background: #F8F8F8;
+	border: 1px solid #C0C0C0;
+	box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.1);
+
+	&:focus, &:active {
+		background: #fff;
+		border-color: #59C3C2;
+		box-shadow: inset 0px 1px 3px 0px rgba(0,0,0,0.1);
+	}
+}
+
+// FOOTER
+.footer {
+	padding-top: 70px;
+	color: $pink;
+	background-color: $purple;
+
+	&__link {
+		a:nth-child(3), a:last-child {
+			display: none;
+		}
+	}
+
+	g {
+		fill: $pink;
+	}
+
+	// @media (min-width: $screen-md) and (min-height: 768px) {
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	bottom: 0;
+	// }
+}

@@ -1,0 +1,63 @@
+		<footer role="contentinfo" class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 footer__link">
+						<a href="/about">About us</a>
+						<a href="mailto:hello@stayfavful.com">Contact</a>
+						<a href="https://www.facebook.com/favful" class="icon icon__fb">
+							<svg width="12" height="20" viewBox="0 0 12 20" xmlns="http://www.w3.org/2000/svg"><path d="M7.937 3.477c-.376 0-.794.495-.794 1.152v2.29h3.97l-.6 3.27h-3.37V20H3.398v-9.81H0V6.92h3.398V5c0-2.76 1.913-5 4.54-5h3.173v3.477H7.938z" fill="#FFF" fill-rule="evenodd"/></svg>
+						</a>
+						<a href="https://twitter.com/favful" class="icon icon__tw">
+							<svg width="22" height="18" viewBox="0 0 22 18" xmlns="http://www.w3.org/2000/svg"><path d="M19.75 4.455c.008.196.01.39.01.582 0 5.97-4.538 12.847-12.84 12.847-2.55 0-4.924-.745-6.92-2.03.35.044.71.06 1.077.06 2.115 0 4.06-.718 5.605-1.93-1.974-.04-3.64-1.343-4.216-3.133.275.05.556.08.848.08.41 0 .81-.055 1.19-.158C2.437 10.357.88 8.532.88 6.346V6.29c.61.337 1.307.543 2.047.567C1.714 6.045.92 4.665.92 3.097c0-.827.22-1.605.61-2.27 2.228 2.73 5.55 4.526 9.304 4.72-.08-.333-.117-.677-.117-1.032 0-2.49 2.02-4.515 4.515-4.515 1.296 0 2.47.55 3.294 1.428C19.556 1.222 20.52.85 21.39.332c-.335 1.053-1.05 1.938-1.983 2.5.915-.113 1.784-.354 2.593-.714-.604.904-1.37 1.702-2.25 2.337z" fill="#FFF" fill-rule="evenodd"/></svg>
+						</a>
+
+						<!-- <a href="/privacy-policy">Privacy policy</a>
+						<a href="/terms-of-use">Terms of use</a> -->
+					</div>
+					<div class="col-sm-6 footer__copyright">
+						2015 <svg width="13" height="10" viewBox="0 0 13 10" xmlns="http://www.w3.org/2000/svg"><g fill="#B04061"><path d="M6.5 10c-.08-.068-.758-.408-2.527-1.633C-1.373 4.664-.18 2.09 1.043.95 1.97.09 3.184-.216 4.43.156c.827.246 1.516.805 1.918 1.52.06.106.15.31.15.31.003 0 .095-.204.154-.31C7.054.96 7.742.4 8.57.155 9.817-.216 11.03.09 11.956.95c.86.8 1.707 2.313.27 4.43-.604.89-1.614 1.89-3.2 2.987C7.26 9.592 6.582 9.932 6.5 10z"></path></g></svg> By the Favful team
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script>window.jQuery || document.write('<scr' + 'ipt src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"><\/sc' + 'ript>')</script>
+		<script>window.$kol_jquery = window.jQuery</script>
+		<script src="https://kickoffpages-kickofflabs.netdna-ssl.com/widgets/1.3.0/kol_embed.js"></script>
+		<script src='https://kickoffpages-kickofflabs.netdna-ssl.com/w/50823/63851.js'></script>
+		<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css">
+		<script src="/js/fancybox/jquery.fancybox.pack.js"></script>
+		<script src="/js/fancybox/helpers/jquery.fancybox-media.js"></script>
+
+		<script>
+			$(document).ready(function(){
+				if($('#favful-video').length) {
+					$('#favful-video').fancybox({
+						openEffect  : 'none',
+						closeEffect : 'none',
+						padding: 0,
+						helpers : {
+							media : {}
+						}
+					});
+				}
+
+				$('#btn-cta-bottom').on('click', function(){
+					$('#email').focus();
+				});
+			});
+		</script>
+
+
+		<!-- Google Analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-59503703-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>
